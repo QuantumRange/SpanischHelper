@@ -1,3 +1,5 @@
+import {clockToString} from "./modules/spanishClock";
+
 let resultForm = document.querySelector('.result-form');
 
 // Wait for the website to load
@@ -15,5 +17,7 @@ window.addEventListener('load', () => {
             timeFrom.value = timeFrom.value.substring(0, cursorPosition) + ':' + timeFrom.value.substring(cursorPosition);
         }
     });
+
+    console.log("Test: " + clockToString(15, 32))
 
 });
